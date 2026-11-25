@@ -1,0 +1,54 @@
+name: Build Package
+
+permissions:
+  contents: read
+
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        required: false
+        type: string
+        default: "3.10"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 📥 Checkout the repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+
+      - name: 🐍 Install uv and set Python version ${{ inputs.python-version }}
+        uses: astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0
+        with:
+          version: "0.9.26"
+          python-version: ${{ inputs.python-version }}
+          activate-environment: true
+
+      # PyPI renders the README with no repository around it, so make its relative paths
+      # absolute: images under docs/ point at this version's docs site (publish-docs.yml
+      # deploys it on the same release), everything else and pre-releases at this commit.
+      # A missing path fails the build instead of publishing a broken link.
+      - name: 🔗 Make README relative paths absolute
+        env:
+          REPO: ${{ github.repository }}
+          REF: ${{ github.sha }}
+        run: >-
+          python .github/scripts/readme_absolute_urls.py README.md
+          --repo "$REPO" --ref "$REF" --docs-url https://rfdetr.roboflow.com
+
+      - name: 🏗️ Build source and wheel distributions
+        run: |
+          uv pip install --group build
+          uv build
+          uv run --no-sync twine check --strict dist/*
+
+      - name: 📤 Upload distribution artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Minimize uv cache
+        run: uv cache prune --ci
