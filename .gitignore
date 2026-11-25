@@ -1,0 +1,15 @@
+# Datasets (large files / raw images)
+dataset/
+dataset_coco_rfdetr/
+*.cache
+
+# Large model checkpoints (>100MB cannot be pushed to GitHub)
+runs/**/*.ckpt
+runs/**/*.pth
+*.ckpt
+*.pth
+
+# Python cache & logs
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
