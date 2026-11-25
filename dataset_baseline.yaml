@@ -1,0 +1,17 @@
+path: /home/msalehib/inf117/RF-DETR/dataset
+train: images/baseline/train
+val: images/baseline/val
+test: images/baseline/test
+
+names:
+  0: Apical Lesion
+  1: Main Root
+  2: Main Canal
+  3: Mesial Root
+  4: Mesial Canal
+  5: Distal Root
+  6: Distal Canal
+  7: Palatal Canal
+  8: Palatal Root
+  9: Root Canal Filling
+  10: decay
