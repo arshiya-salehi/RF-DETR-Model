@@ -1,0 +1,332 @@
+{
+  "checkpoint": "/home/msalehib/inf117/Yolo/runs/rfdetr_seg_output/checkpoint_best_total.pth",
+  "optimal_threshold": 0.47000000000000003,
+  "validation_metrics": {
+    "Apical Lesion": {
+      "gt_count": 78,
+      "pred_count": 59,
+      "bbox_precision": 0.6101694915254238,
+      "bbox_recall": 0.46153846153846156,
+      "bbox_f1": 0.5255474452554745,
+      "mask_precision": 0.559322033898305,
+      "mask_recall": 0.4230769230769231,
+      "mask_f1": 0.4817518248175182,
+      "mask_avg_dice": 0.8149250471800383,
+      "mask_avg_iou": 0.693654435755077
+    },
+    "Main Root": {
+      "gt_count": 205,
+      "pred_count": 204,
+      "bbox_precision": 0.9068627450980392,
+      "bbox_recall": 0.9024390243902439,
+      "bbox_f1": 0.9046454767726161,
+      "mask_precision": 0.9068627450980392,
+      "mask_recall": 0.9024390243902439,
+      "mask_f1": 0.9046454767726161,
+      "mask_avg_dice": 0.9192174440135673,
+      "mask_avg_iou": 0.8540444815006352
+    },
+    "Main Canal": {
+      "gt_count": 110,
+      "pred_count": 98,
+      "bbox_precision": 0.8367346938775511,
+      "bbox_recall": 0.7454545454545455,
+      "bbox_f1": 0.7884615384615385,
+      "mask_precision": 0.7959183673469388,
+      "mask_recall": 0.7090909090909091,
+      "mask_f1": 0.75,
+      "mask_avg_dice": 0.7799169073307078,
+      "mask_avg_iou": 0.6432731592201254
+    },
+    "Mesial Root": {
+      "gt_count": 160,
+      "pred_count": 156,
+      "bbox_precision": 0.9102564102564102,
+      "bbox_recall": 0.8875,
+      "bbox_f1": 0.8987341772151898,
+      "mask_precision": 0.9230769230769231,
+      "mask_recall": 0.9,
+      "mask_f1": 0.9113924050632911,
+      "mask_avg_dice": 0.8869509439545307,
+      "mask_avg_iou": 0.8010962013487709
+    },
+    "Mesial Canal": {
+      "gt_count": 70,
+      "pred_count": 53,
+      "bbox_precision": 0.7169811320754716,
+      "bbox_recall": 0.5428571428571428,
+      "bbox_f1": 0.6178861788617885,
+      "mask_precision": 0.5283018867924528,
+      "mask_recall": 0.4,
+      "mask_f1": 0.4552845528455285,
+      "mask_avg_dice": 0.7481527014977039,
+      "mask_avg_iou": 0.6006776915757704
+    },
+    "Distal Root": {
+      "gt_count": 153,
+      "pred_count": 153,
+      "bbox_precision": 0.8496732026143791,
+      "bbox_recall": 0.8496732026143791,
+      "bbox_f1": 0.8496732026143791,
+      "mask_precision": 0.8562091503267973,
+      "mask_recall": 0.8562091503267973,
+      "mask_f1": 0.8562091503267973,
+      "mask_avg_dice": 0.8846129632211711,
+      "mask_avg_iou": 0.798007089881129
+    },
+    "Distal Canal": {
+      "gt_count": 70,
+      "pred_count": 57,
+      "bbox_precision": 0.7543859649122807,
+      "bbox_recall": 0.6142857142857143,
+      "bbox_f1": 0.6771653543307086,
+      "mask_precision": 0.6140350877192983,
+      "mask_recall": 0.5,
+      "mask_f1": 0.5511811023622046,
+      "mask_avg_dice": 0.7565136786253394,
+      "mask_avg_iou": 0.611876625671303
+    },
+    "Palatal Canal": {
+      "gt_count": 6,
+      "pred_count": 3,
+      "bbox_precision": 0.6666666666666666,
+      "bbox_recall": 0.3333333333333333,
+      "bbox_f1": 0.4444444444444444,
+      "mask_precision": 0.6666666666666666,
+      "mask_recall": 0.3333333333333333,
+      "mask_f1": 0.4444444444444444,
+      "mask_avg_dice": 0.7677576869585792,
+      "mask_avg_iou": 0.6231606351415457
+    },
+    "Palatal Root": {
+      "gt_count": 80,
+      "pred_count": 89,
+      "bbox_precision": 0.8089887640449438,
+      "bbox_recall": 0.9,
+      "bbox_f1": 0.8520710059171598,
+      "mask_precision": 0.8089887640449438,
+      "mask_recall": 0.9,
+      "mask_f1": 0.8520710059171598,
+      "mask_avg_dice": 0.8977520822244021,
+      "mask_avg_iou": 0.8180665935804953
+    },
+    "Root Canal Filling": {
+      "gt_count": 127,
+      "pred_count": 131,
+      "bbox_precision": 0.8549618320610687,
+      "bbox_recall": 0.8818897637795275,
+      "bbox_f1": 0.868217054263566,
+      "mask_precision": 0.8320610687022901,
+      "mask_recall": 0.8582677165354331,
+      "mask_f1": 0.8449612403100776,
+      "mask_avg_dice": 0.8371545911717261,
+      "mask_avg_iou": 0.7250958320048669
+    },
+    "Decay Caries": {
+      "gt_count": 34,
+      "pred_count": 30,
+      "bbox_precision": 0.43333333333333335,
+      "bbox_recall": 0.38235294117647056,
+      "bbox_f1": 0.40625,
+      "mask_precision": 0.43333333333333335,
+      "mask_recall": 0.38235294117647056,
+      "mask_f1": 0.40625,
+      "mask_avg_dice": 0.8401725915194963,
+      "mask_avg_iou": 0.7293489119156138
+    }
+  },
+  "test_metrics": {
+    "Apical Lesion": {
+      "gt_count": 84,
+      "pred_count": 56,
+      "bbox_precision": 0.7142857142857143,
+      "bbox_recall": 0.47619047619047616,
+      "bbox_f1": 0.5714285714285714,
+      "mask_precision": 0.6071428571428571,
+      "mask_recall": 0.40476190476190477,
+      "mask_f1": 0.4857142857142857,
+      "mask_avg_dice": 0.8059965021329653,
+      "mask_avg_iou": 0.682242870895162
+    },
+    "Main Root": {
+      "gt_count": 196,
+      "pred_count": 207,
+      "bbox_precision": 0.8357487922705314,
+      "bbox_recall": 0.8826530612244898,
+      "bbox_f1": 0.8585607940446649,
+      "mask_precision": 0.8260869565217391,
+      "mask_recall": 0.8724489795918368,
+      "mask_f1": 0.8486352357320099,
+      "mask_avg_dice": 0.9255856020132057,
+      "mask_avg_iou": 0.8638789949930443
+    },
+    "Main Canal": {
+      "gt_count": 110,
+      "pred_count": 110,
+      "bbox_precision": 0.8454545454545455,
+      "bbox_recall": 0.8454545454545455,
+      "bbox_f1": 0.8454545454545455,
+      "mask_precision": 0.7818181818181819,
+      "mask_recall": 0.7818181818181819,
+      "mask_f1": 0.7818181818181819,
+      "mask_avg_dice": 0.7962605358018804,
+      "mask_avg_iou": 0.6655368944234523
+    },
+    "Mesial Root": {
+      "gt_count": 170,
+      "pred_count": 152,
+      "bbox_precision": 0.9210526315789473,
+      "bbox_recall": 0.8235294117647058,
+      "bbox_f1": 0.8695652173913043,
+      "mask_precision": 0.9276315789473685,
+      "mask_recall": 0.8294117647058824,
+      "mask_f1": 0.875776397515528,
+      "mask_avg_dice": 0.893744008828919,
+      "mask_avg_iou": 0.8105750263079525
+    },
+    "Mesial Canal": {
+      "gt_count": 73,
+      "pred_count": 52,
+      "bbox_precision": 0.6538461538461539,
+      "bbox_recall": 0.4657534246575342,
+      "bbox_f1": 0.544,
+      "mask_precision": 0.36538461538461536,
+      "mask_recall": 0.2602739726027397,
+      "mask_f1": 0.304,
+      "mask_avg_dice": 0.7307913160490879,
+      "mask_avg_iou": 0.5780713399393368
+    },
+    "Distal Root": {
+      "gt_count": 165,
+      "pred_count": 156,
+      "bbox_precision": 0.8717948717948718,
+      "bbox_recall": 0.8242424242424242,
+      "bbox_f1": 0.8473520249221185,
+      "mask_precision": 0.8653846153846154,
+      "mask_recall": 0.8181818181818182,
+      "mask_f1": 0.8411214953271028,
+      "mask_avg_dice": 0.8966624515151874,
+      "mask_avg_iou": 0.8174660446386546
+    },
+    "Distal Canal": {
+      "gt_count": 63,
+      "pred_count": 54,
+      "bbox_precision": 0.6666666666666666,
+      "bbox_recall": 0.5714285714285714,
+      "bbox_f1": 0.6153846153846153,
+      "mask_precision": 0.6481481481481481,
+      "mask_recall": 0.5555555555555556,
+      "mask_f1": 0.5982905982905983,
+      "mask_avg_dice": 0.7619962915911268,
+      "mask_avg_iou": 0.6177293697795128
+    },
+    "Palatal Canal": {
+      "gt_count": 5,
+      "pred_count": 3,
+      "bbox_precision": 0.3333333333333333,
+      "bbox_recall": 0.2,
+      "bbox_f1": 0.25,
+      "mask_precision": 0.0,
+      "mask_recall": 0.0,
+      "mask_f1": 0.0,
+      "mask_avg_dice": 0.0,
+      "mask_avg_iou": 0.0
+    },
+    "Palatal Root": {
+      "gt_count": 89,
+      "pred_count": 87,
+      "bbox_precision": 0.8735632183908046,
+      "bbox_recall": 0.8539325842696629,
+      "bbox_f1": 0.8636363636363635,
+      "mask_precision": 0.8735632183908046,
+      "mask_recall": 0.8539325842696629,
+      "mask_f1": 0.8636363636363635,
+      "mask_avg_dice": 0.8886930476670196,
+      "mask_avg_iou": 0.8029165589708932
+    },
+    "Root Canal Filling": {
+      "gt_count": 131,
+      "pred_count": 130,
+      "bbox_precision": 0.8,
+      "bbox_recall": 0.7938931297709924,
+      "bbox_f1": 0.7969348659003831,
+      "mask_precision": 0.8,
+      "mask_recall": 0.7938931297709924,
+      "mask_f1": 0.7969348659003831,
+      "mask_avg_dice": 0.8537638143006512,
+      "mask_avg_iou": 0.7493708808384903
+    },
+    "Decay Caries": {
+      "gt_count": 36,
+      "pred_count": 30,
+      "bbox_precision": 0.6333333333333333,
+      "bbox_recall": 0.5277777777777778,
+      "bbox_f1": 0.5757575757575758,
+      "mask_precision": 0.6333333333333333,
+      "mask_recall": 0.5277777777777778,
+      "mask_f1": 0.5757575757575758,
+      "mask_avg_dice": 0.8515207856708767,
+      "mask_avg_iou": 0.7485744066493766
+    }
+  },
+  "validation_overlapping_root_canal": {
+    "Main Root & Main Canal": {
+      "gt_paired_images": 71,
+      "pred_paired_images": 63,
+      "co_detection_rate": 0.8873239436619719,
+      "avg_bbox_containment": 0.6977005004882812,
+      "avg_mask_containment": 0.6968257375624594
+    },
+    "Mesial Root & Mesial Canal": {
+      "gt_paired_images": 54,
+      "pred_paired_images": 40,
+      "co_detection_rate": 0.7407407407407407,
+      "avg_bbox_containment": 0.6719481945037842,
+      "avg_mask_containment": 0.6615495549519912
+    },
+    "Distal Root & Distal Canal": {
+      "gt_paired_images": 51,
+      "pred_paired_images": 36,
+      "co_detection_rate": 0.7058823529411765,
+      "avg_bbox_containment": 0.7483994364738464,
+      "avg_mask_containment": 0.7373641453826527
+    },
+    "Palatal Root & Palatal Canal": {
+      "gt_paired_images": 5,
+      "pred_paired_images": 2,
+      "co_detection_rate": 0.4,
+      "avg_bbox_containment": 1.0,
+      "avg_mask_containment": 1.0
+    }
+  },
+  "test_overlapping_root_canal": {
+    "Main Root & Main Canal": {
+      "gt_paired_images": 71,
+      "pred_paired_images": 68,
+      "co_detection_rate": 0.9577464788732394,
+      "avg_bbox_containment": 0.6716116070747375,
+      "avg_mask_containment": 0.6606951389375575
+    },
+    "Mesial Root & Mesial Canal": {
+      "gt_paired_images": 52,
+      "pred_paired_images": 36,
+      "co_detection_rate": 0.6923076923076923,
+      "avg_bbox_containment": 0.6094089150428772,
+      "avg_mask_containment": 0.5957529771788068
+    },
+    "Distal Root & Distal Canal": {
+      "gt_paired_images": 46,
+      "pred_paired_images": 34,
+      "co_detection_rate": 0.7391304347826086,
+      "avg_bbox_containment": 0.7051725387573242,
+      "avg_mask_containment": 0.700793039935781
+    },
+    "Palatal Root & Palatal Canal": {
+      "gt_paired_images": 5,
+      "pred_paired_images": 1,
+      "co_detection_rate": 0.2,
+      "avg_bbox_containment": 1.0,
+      "avg_mask_containment": 1.0
+    }
+  }
+}
